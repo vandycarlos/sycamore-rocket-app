@@ -1,0 +1,16 @@
+[package]
+authors = [""]
+edition = "2021"
+name = "server"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+app = { path = "./app" }
+pulldown-cmark = "0.9.2"
+rocket = "0.5.0-rc.2"
+sycamore = { version = "0.8.0", features = ["ssr"] }
+
+[workspace]
+members = ["app"]
